@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nidhi ❤️ A Story of Memories</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:#05050d;color:white;
+  font-family:Georgia,serif;text-align:center;
+  min-height:100vh;overflow-x:hidden;
+}
+.intro{
+  min-height:100vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;padding:25px;
+  background:radial-gradient(ellipse,#36112f,#080712 70%);
+}
+h1{
+  color:#ff80d9;font-size:clamp(38px,8vw,65px);
+  text-shadow:0 0 25px #ff168e;margin-bottom:20px;
+}
+p{line-height:1.9}
+button{
+  padding:15px 28px;border-radius:35px;
+  background:linear-gradient(135deg,#ff73c9,#e62660);
+  border:1px solid #ffb4e6;color:white;
+  font-size:17px;cursor:pointer;margin:25px 0;
+  box-shadow:0 0 25px #ff329966;
+}
+button:hover{transform:scale(1.06)}
+#story{
+  display:none;min-height:100vh;padding:45px 18px;
+  background:radial-gradient(ellipse,#260c24,#05050d 72%);
+  overflow:hidden;position:relative;
+}
+#story.show{display:block;animation:fade .9s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.scene{
+  height:300px;display:grid;place-items:center;
+  perspective:900px;margin:10px auto 30px;
+}
+.heart{
+  position:relative;width:115px;height:115px;
+  transform:rotate(-45deg);
+  background:linear-gradient(145deg,#ff8ccf,#ed174f 55%,#650021);
+  border-radius:10px;
+  animation:beat 1.5s ease-in-out infinite,rotate3d 6s linear infinite;
+  box-shadow:0 0 25px #ff176f,0 0 75px #e90062;
+}
+.heart:before,.heart:after{
+  content:"";position:absolute;width:115px;height:115px;
+  border-radius:50%;background:inherit;
+}
+.heart:before{top:-57px;left:0}
+.heart:after{top:0;left:57px}
+@keyframes beat{
+  0%,100%{scale:1}
+  15%{scale:1.13}
+  30%{scale:1}
+  45%{scale:1.1}
+}
+@keyframes rotate3d{
+  0%,100%{filter:hue-rotate(0deg);transform:rotate(-45deg) rotateY(-12deg)}
+  50%{filter:hue-rotate(15deg);transform:rotate(-45deg) rotateY(12deg)}
+}
+.rain{
+  position:absolute;top:-40px;color:#9ac5ff;
+  opacity:.6;pointer-events:none;
+  animation:fall linear infinite;
+}
+@keyframes fall{to{transform:translateY(110vh);opacity:0}}
+.note{
+  max-width:650px;margin:22px auto;padding:27px;
+  background:#ffffff08;border:1px solid #ff70c755;
+  border-radius:20px;line-height:2;
+  box-shadow:0 0 30px #ff168d18;
+}
+.note h2{color:#ff8bd8;margin-bottom:15px}
+.memory{
+  opacity:0;animation:memoryIn 1s ease forwards;
+  color:#ffd8ef;font-size:clamp(17px,4vw,22px);
+  margin:22px auto;max-width:600px;
+}
+.memory:nth-child(2){animation-delay:1s}
+.memory:nth-child(3){animation-delay:3.5s}
+.memory:nth-child(4){animation-delay:6s}
+@keyframes memoryIn{
+  from{opacity:0;transform:translateY(20px);filter:blur(5px)}
+  to{opacity:1;transform:translateY(0);filter:blur(0)}
+}
+.small{color:#c9b5cc;font-size:14px}
+#musicBtn{background:#292039}
+footer{padding:30px;color:#ff9bda}
+</style>
+</head>
+
+<body>
+
+<div class="intro" id="intro">
+  <p style="letter-spacing:4px;color:#e7b4e1">A STORY FROM THE HEART ✨</p>
+  <h1>Dear Nidhi ❤️</h1>
+  <p>Ek chhoti si yaad... ek adhuri si kahani...</p>
+  <p style="color:#d8bfdc">Kya tum mera dil khologe? 💌</p>
+  <button onclick="openStory()">OPEN MY HEART 💔</button>
+  <p class="small">A little memory made by Aman</p>
+</div>
+
+<div id="story">
+  <p style="color:#ff8bd8;letter-spacing:3px">AMAN ❤️ NIDHI</p>
+
+  <div class="scene">
+    <div class="heart"></div>
+  </div>
+
+  <h1 style="font-size:clamp(30px,7vw,48px)">Kuch Yaadein... 💔</h1>
+
+  <div class="memory">
+    Woh din aaj bhi yaad hai...
+  </div>
+
+  <div class="memory">
+    Jab mera Chemistry ka paper tha,
+    tab tum mujhse door chali gayi thi...
+  </div>
+
+  <div class="memory">
+    Us waqt tumhari bahut yaad aati thi, Nidhi. 🥺
+  </div>
+
+  <div class="note">
+    <h2>💌 Nidhi Ke Naam</h2>
+    <p>
+      Pata nahi tumhe meri ye baat yaad hai ya nahi,
+      par mujhe woh waqt aaj bhi yaad aata hai.
+    </p>
+    <p>
+      Tumse judi chhoti-chhoti yaadein mere liye khaas hain.
+      Kabhi tumhari baatein yaad aati hain,
+      kabhi woh purane pal.
+    </p>
+    <p>
+      Main tumhe bahut miss karta hoon, Nidhi. ❤️
+      Bas dil chahta hai ki tum hamesha khush raho.
+    </p>
+    <p style="color:#ff80d9;margin-top:18px">
+      Kuch yaadein waqt ke saath bhi nahi mitti...
+    </p>
+    <p>— Aman 💗</p>
+  </div>
+
+  <button onclick="again()">WATCH AGAIN ❤️</button>
+  <button id="musicBtn" onclick="toggleMusic()">♫ MUSIC ON</button>
+
+  <p class="small">Yeh chhoti si kahani tumhari yaadon ke naam.</p>
+  <footer>Made with ❤️ by Aman</footer>
+</div>
+
+<script>
+let opened=false;
+let audioContext=null;
+let musicTimer=null;
+let musicOn=false;
+let noteIndex=0;
+
+function openStory(){
+  document.getElementById('intro').style.display='none';
+  const story=document.getElementById('story');
+  story.style.display='block';
+  story.classList.remove('show');
+  void story.offsetWidth;
+  story.classList.add('show');
+  opened=true;
+  window.scrollTo(0,0);
+  startRain();
+  playNotes();
+}
+
+function startRain(){
+  if(document.querySelector('.rain'))return;
+  for(let i=0;i<32;i++){
+    const r=document.createElement('span');
+    r.className='rain';
+    r.textContent='⋮';
+    r.style.left=Math.random()*100+'%';
+    r.style.animationDuration=(2+Math.random()*4)+'s';
+    r.style.animationDelay=(-Math.random()*5)+'s';
+    r.style.fontSize=(12+Math.random()*15)+'px';
+    document.getElementById('story').appendChild(r);
+  }
+}
+
+// Soft, simple synthesized background melody.
+// Browser audio starts only after the visitor clicks.
+function playNotes(){
+  if(!audioContext){
+    const AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return;
+    audioContext=new AC();
+  }
+  audioContext.resume();
+  musicOn=true;
+  document.getElementById('musicBtn').textContent='♫ MUSIC OFF';
+  if(musicTimer)clearInterval(musicTimer);
+
+  const notes=[261.63,329.63,392,329.63,293.66,349.23];
+  noteIndex=0;
+  function tone(){
+    if(!musicOn||!audioContext)return;
+    const osc=audioContext.createOscillator();
+    const gain=audioContext.createGain();
+    osc.type='sine';
+    osc.frequency.value=notes[noteIndex%notes.length];
+    gain.gain.setValueAtTime(0.0001,audioContext.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.035,audioContext.currentTime+0.12);
+    gain.gain.exponentialRampToValueAtTime(0.0001,audioContext.currentTime+1.1);
+    osc.connect(gain);
+    gain.connect(audioContext.destination);
+    osc.start();
+    osc.stop(audioContext.currentTime+1.15);
+    noteIndex++;
+  }
+  tone();
+  musicTimer=setInterval(tone,1100);
+}
+
+function toggleMusic(){
+  if(musicOn){
+    musicOn=false;
+    if(musicTimer)clearInterval(musicTimer);
+    document.getElementById('musicBtn').textContent='♫ MUSIC ON';
+  }else{
+    playNotes();
+  }
+}
+
+function again(){
+  document.getElementById('story').style.display='none';
+  document.getElementById('intro').style.display='flex';
+  if(musicTimer)clearInterval(musicTimer);
+  musicOn=false;
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
